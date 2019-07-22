@@ -24,3 +24,6 @@
 *.scss.map
 
 # End of https://www.gitignore.io/api/sass,linux
+
+prepros.cfg
+prepros-6.config
