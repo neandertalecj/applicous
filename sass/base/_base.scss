@@ -3,14 +3,23 @@
 *::after {
     box-sizing: border-box;
 }
+body {
+    color: $main;
+}
 
 img {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
