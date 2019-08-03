@@ -414,7 +414,8 @@ template {
   box-sizing: border-box; }
 
 body {
-  color: #048ca8; }
+  color: #048ca8;
+  text-align: center; }
 
 img {
   max-width: 100%;
@@ -487,7 +488,19 @@ h2 {
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap; }
+
+.col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
+
+.col--full {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
 
 .main-nav {
   background: #d31869;
@@ -578,6 +591,18 @@ h2 {
     transform: rotate(-90deg) translateX(3px); }
   .hamburger.is-open::before {
     opacity: 0; }
+
+.promo {
+  padding: 10vh 0; }
+
+.sales-points {
+  padding: 10vh 0; }
+  .sales-points .sales-point {
+    margin-bottom: 2.5em; }
+    .sales-points .sales-point:first-of-type {
+      margin-top: 1.5em; }
+    .sales-points .sales-point:last-child {
+      margin-bottom: 0; }
 
 .btn {
   display: inline-block;
