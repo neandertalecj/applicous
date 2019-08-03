@@ -431,6 +431,14 @@ img {
   padding: 0;
   list-style: none; }
 
+.lg-screen {
+  display: none; }
+
+.bg-primary {
+  background: #048ca8;
+  color: white;
+  padding: 2.5em; }
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 .75em; }
 
@@ -443,7 +451,8 @@ h1 {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.15;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 3px; }
 
 h2 {
   font-size: 1.2rem;
@@ -456,6 +465,26 @@ h2 {
   font-weight: 900; }
   .title-large span {
     font-weight: 300; }
+
+.title-box {
+  background: #d31869;
+  color: white;
+  margin: 0 auto;
+  padding: 2em;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+  max-width: 90%; }
+  @media (min-width: 495px) {
+    .title-box {
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); } }
+  .title-box + .bg-primary {
+    padding-top: 8em; }
+    @media (min-width: 495px) {
+      .title-box + .bg-primary {
+        padding-top: 8em; } }
 
 .text-intro {
   font-size: 1.2rem; }
@@ -481,9 +510,6 @@ h2 {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
-
-.hero-img {
-  display: none; }
 
 .grid {
   display: -webkit-box;
@@ -592,11 +618,8 @@ h2 {
   .hamburger.is-open::before {
     opacity: 0; }
 
-.promo {
-  padding: 10vh 0; }
-
 .sales-points {
-  padding: 10vh 0; }
+  padding: 10vh 0 0; }
   .sales-points .sales-point {
     margin-bottom: 2.5em; }
     .sales-points .sales-point:first-of-type {
